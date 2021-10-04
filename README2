@@ -1,0 +1,16 @@
+1. Instalar el paquete video_stream_opencv: apt-get install ros-YOURVERSION-video-stream-opencv
+2. Correr roslaunch vision_paquete camera_publisher camera_publisher_hd1.launch 
+   Si la camara no esta en /dev/video0, se puede indentificar cual es la camara corriendo rosrun   
+   vision_paquete test_video_resource.py
+3. Correr rosrun vision_paquete image_subscriber.py
+4. Ver con rqt_graph 
+
+(si no muestra imagen verificar el parametro video_provider del archivo camera_publisher_hd1.launch)
+
+links ayuda: 
+http://wiki.ros.org/video_stream_opencv
+https://github.com/ros-drivers/video_stream_opencv
+
+Image_view (alternativa a hacer un nodo subscriber)
+https://answers.ros.org/question/304777/new-in-ros-sensor_msgsimage-in-opencv/
+http://wiki.ros.org/image_view
